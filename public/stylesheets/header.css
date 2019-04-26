@@ -1,0 +1,29 @@
+#nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: "open sans condensed";
+    background-color: rgba(211,211,211, .1);
+    line-height: 40px;
+    z-index: 10;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+
+a:hover {
+    color: gray;
+    transition: .2s linear;
+}
+
+@media screen and (max-width: 600px){
+  #nav {
+    flex-direction: column;
+    width: 130px;
+    line-height: 30px;
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,51 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-image: url(/photos/nickpic.JPG);
+    filter: grayscale(100%);
+    background-position: 80% 10%;
+}
+
+#nav {
+    background-color: rgba(0,0,0, .4);
+}
+
+audio {
+    outline: none;
+}
+
+#sounds {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+    font-family: "open sans condensed";
+    outline: none;
+    color: white;
+    height: 80%;
+    width: 30%;
+    background-color: rgba(0,0,0, .4);
+    border-radius: 15%;
+    margin-top: 20px;
+    box-shadow: 2px 2px rgba(0,0,0,.2);
+}
+
+.spco a {
+    color: white;
+    text-decoration: underline;
+}
+@media only screen and (max-width: 1000px) {
+    #sounds {
+        width: 80%;
+        height: 60%;
+        overflow: auto;
+    }
+    
+    body, html {
+        background-position: 90% 15%;
+    }
+}

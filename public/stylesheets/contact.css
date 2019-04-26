@@ -1,0 +1,51 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+}
+
+.email {
+    font-size: 38px;
+    letter-spacing: 4px;
+}
+.contact {
+    height: calc(100vh - 4in);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 6px;
+    font-family: "open sans condensed";
+    margin-top: 80px;
+    animation-name: appear;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.contact p {
+    color: white;
+}
+
+@keyframes appear {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    25% {
+        transform: translateX(750px);
+        
+    }
+    50% {
+        transform: translateX(500px);
+    }
+    75% {
+        transform: translateX(250px);
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

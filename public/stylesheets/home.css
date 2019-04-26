@@ -1,0 +1,169 @@
+#wrapper {
+	display: flex;
+	justify-content: space-around;
+	height: 100%;
+	font-family: "open sans condensed";
+	width: 100%;
+}
+
+#coolpic {
+	height: 100vh;
+
+}
+.pic {
+	display: flex;
+	animation-name: fadeIn;
+	animation-duration: 8s;
+	animation-iteration-count: 1;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 40px;
+	height: 100%;
+}
+.shows {
+	display: flex;
+	flex-direction: column;
+	color:white;
+}
+
+#headershows {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+	margin-top: 70px;
+	margin-right: 70px;
+	letter-spacing: 15px;
+	text-transform: uppercase;
+	animation-name: fadeIn;
+	animation-duration: 8s;
+	animation-iteration-count: 1;
+}
+
+#showbox {
+	flex-direction: column;
+	display: flex;
+	text-align: center;
+	justify-content: flex-start;
+	border-radius: 5%;
+	margin-right: 70px;
+	margin-bottom: 40px;
+	font-family: "open sans condensed";
+	flex-wrap: wrap;
+	overflow: auto;
+	animation-name: appear;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+
+#showbox p {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	max-height: 75%;
+	font-size: 15px;
+	font-weight: normal;
+	font-family: "open sans condensed";
+	letter-spacing: 2px;
+}
+
+
+
+#showbox div {
+	margin-top: 10px;
+	margin-left: 30px;
+	color: white;
+}
+
+h1 {
+	font-size: 60px;
+	margin-bottom: 0;
+	font-weight: normal;
+}
+
+h4 {
+	font-size: 30px;
+	margin-top: 0;
+	font-weight: normal;
+}
+
+h3 {
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 5px;;
+	margin-right: 50px;
+	animation-name: appear;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	
+}
+
+#showbox .h3 {
+	width: 100%;
+}
+
+p {
+	margin-top: 0;
+}
+
+body, html {
+	background-color: black;
+	margin: 0;
+	height: 100%;
+	background-image: url(/photos/JCbackground.png);
+	background-size: cover;
+}
+
+
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes appear {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    25% {
+        transform: translateX(750px);
+    }
+    50% {
+        transform: translateX(500px);
+    }
+    75% {
+        transform: translateX(250px);
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+	.pic {
+		display: none;
+	}
+	h3{
+		display: none;
+	}
+	h4{
+		font-size: 15px;
+	}
+	#showbox {
+		display: none;
+	}
+	#headershows {
+		margin-bottom: 150px;
+		margin-left: 100px;
+		text-align: center;
+	}
+}
